@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Lotpot Channel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .bg-dark, .footer {
+            background-color: #222222 !important;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+        }
+
+        .footer-container {
+            background-color: #1c1c1c;
+        }
+
+        .btn-primary {
+            background-color: #00A1E0;
+        }
+
+        .hero {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="brand">Doctor Lotpot Channel</h1>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#videos" class="nav-item">Videos</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <a href="#channel-details" class="nav-item">Channel Details</a>
+            </nav>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <section class="hero">
+        <div class="video-container">
+            <iframe 
+                id="heroVideo" 
+                src="https://www.youtube.com/embed/Z2BL6pJDNG4?autoplay=1&mute=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen"
+                allowfullscreen>
+            </iframe>
+    
+            <div class="overlay-text">
+                <h2>Welcome to Doctor Lotpot Channel</h2>
+                <p>Laugh, Learn, and Enjoy with Doctor Lotpot!</p>
+                <button id="muteButton" class="btn btn-primary">Unmute</button>
+                <a href="https://www.youtube.com/" target="_blank" class="btn btn-secondary">Subscribe Now</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <!-- Left side: Text content -->
+                <div class="col-md-6 text-left">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="lead">
+                        Welcome to the Doctor Lotpot Channel! We are dedicated to bringing joy, learning, and laughter to people of all ages. 
+                        Our videos are a perfect blend of fun and education, making every moment enjoyable and meaningful.
+                    </p>
+                    <p>
+                        From hilarious skits to informative tutorials, we ensure that there’s something for everyone. Join our growing 
+                        community and experience the joy of learning in a way you've never seen before. Stay tuned for engaging content, 
+                        fresh ideas, and endless fun!
+                    </p>
+                    <p>
+                        We believe in creating a world where laughter and knowledge go hand in hand. Let’s laugh, learn, and grow together. 
+                        Subscribe to Doctor Lotpot today!
+                    </p>
+                    <a href="https://www.youtube.com/" class="btn btn-primary mt-4" target="_blank">Subscribe Now</a>
+                </div>
+               
+                <!-- Right side: Image -->
+               <div class="col-md-6">
+                  <img src="image.png" alt="Doctor Lotpot Image" class="img-fluid rounded" style="height: 400px; object-fit: cover;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="videos" class="py-5" style="background: linear-gradient(135deg, #1A1A1D, #3B1C32);">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white">Our Videos</h2>
+            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First video set -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/e7vsZ019gns" 
+                                        title="INDIAN MOTHER | DOCTOR LOTPOT | FUNNY VIDEO" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">INDIAN MOTHER | FUNNY VIDEO</h5>
+                            </div>
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Z2BL6pJDNG4" 
+                                        title="Trump Modi Ka CORONA | Stand Up Comedy" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">Trump Modi Ka CORONA</h5>
+                            </div>
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/IT_LP6bv7DA" 
+                                        title="FUNNY STORIES | PART 33 | BEST COMEDY" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">FUNNY STORIES | PART 33</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Second video set -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://youtube.com/embed/ANAtSuBV6H0?si=PTKP29lSt-9Freyc" 
+                                        title="Video Title 4" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">Amazing Dance Video</h5>
+                            </div>
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://youtube.com/embed/=-UimXB2g2hp9Gcek" 
+                                        title="Gangnam Style | PSY" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">Gangnam Style</h5>
+                            </div>
+                            <div class="col-md-4 video-card">
+                                <iframe width="100%" height="200" src="https://youtube.com/embed/SJNR4d1c0z4?si=H_A4rbvQJnyKWTQz" 
+                                        title="Beastie Boys - Sabotage" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen></iframe>
+                                <h5 class="mt-2 text-white">Beastie Boys - Sabotage</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+    <section id="video-list-section" style="background: linear-gradient(135deg, #1A1A1D, #3B1C32); padding: 50px 0;">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="text-center mb-4">
+                <h2 class="section-title" style="color: white; font-size: 36px; font-weight: bold;">Watch Our Latest Videos</h2>
+            </div>
+            
+            <div class="row" id="video-container">
+                <!-- The initial 4 videos will be added dynamically via JavaScript -->
+            </div>
+            
+            <div class="text-center mt-4">
+                <button id="load-more" class="btn btn-warning" style="color: #000000; font-size: 18px;">Load More</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="channel-details" class="py-5" style="background: linear-gradient(135deg, #1A1A1D, #3B1C32); color: white;">
+        <div class="container text-center">
+            <h2 class="section-title mb-5" style="font-size: 36px; font-weight: bold; color: #FCC737;">Channel Details</h2>
+            
+            <!-- Channel Info Cards -->
+            <div class="row">
+                <!-- Channel Name -->
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <i class="fas fa-tv fa-3x mb-3" style="color: white;"></i>
+                            <h5 class="card-title" style="color: #FCC737;">Channel Name</h5>
+                            <p class="card-text" style="color: #FCC737;">@BollygradStudioz</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Total Subscribers -->
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x mb-3" style="color: white;"></i>
+                            <h5 class="card-title" style="color: #FCC737;">Subscribers</h5>
+                            <p class="card-text" style="color: #FCC737;">9.21M</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Total Videos -->
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <i class="fas fa-video fa-3x mb-3" style="color: white;"></i>
+                            <h5 class="card-title" style="color: #FCC737;">Total Videos</h5>
+                            <p class="card-text" style="color: #FCC737;">75K</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-3 mb-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <i class="fas fa-share-alt fa-3x mb-3" style="color: white;"></i>
+                            <h5 class="card-title" style="color: #FCC737;">Follow Us</h5>
+                            <p class="card-text"><a href="https://www.youtube.com/@BollygradStudioz" target="_blank" style="color: #FCC737;">YouTube Channel</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <section id="contact" class="py-5" style="background: linear-gradient(135deg, #1A1A1D, #3B1C32); color: #fff;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 36px; font-weight: bold;">Get in Touch</h2>
+    
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <div class="p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.1);">
+                        <i class="fas fa-map-marker-alt fa-3x mb-3" style="color: #FCC737;"></i>
+                        <h5 class="mb-2" style="color: #FCC737;">Our Address</h5>
+                        <p>123 Doctor Lotpot Lane,<br> Entertainment City, 56789</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.1);">
+                        <i class="fas fa-envelope fa-3x mb-3" style="color: #FCC737;"></i>
+                        <h5 class="mb-2" style="color: #FCC737;">Email Us</h5>
+                        <p>contact@doctorlotpot.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.1);">
+                        <i class="fas fa-phone fa-3x mb-3" style="color: #FCC737;"></i>
+                        <h5 class="mb-2" style="color: #FCC737;">Call Us</h5>
+                        <p>+1 234 567 890</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form class="rounded p-4 mt-5" style="background: rgba(255, 255, 255, 0.1);">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text" style="background: rgba(255, 255, 255, 0.2); border: none;">
+                                <i class="fas fa-user" style="color: #FCC737;"></i>
+                            </span>
+                            <input 
+                                type="text" 
+                                class="form-control rounded-end px-3" 
+                                id="name" 
+                                placeholder="Your Name"
+                                style="background: rgba(255, 255, 255, 0.2); color: #fff; border: none;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text" style="background: rgba(255, 255, 255, 0.2); border: none;">
+                                <i class="fas fa-envelope" style="color: #FCC737;"></i>
+                            </span>
+                            <input 
+                                type="email" 
+                                class="form-control rounded-end px-3" 
+                                id="email" 
+                                placeholder="Your Email"
+                                style="background: rgba(255, 255, 255, 0.2); color: #fff; border: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea 
+                        class="form-control rounded-3 px-3" 
+                        id="message" 
+                        rows="4" 
+                        placeholder="Your Message"
+                        style="background: rgba(255, 255, 255, 0.2); color: #fff; border: none;"></textarea>
+                </div>
+                <button 
+                    type="submit" 
+                    class="btn btn-primary rounded-pill w-100 py-2 mt-4" 
+                    style="background-color: #00A1E0; border: none; transition: background 0.3s; font-size: 18px;">
+                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+
+
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Branding -->
+        <div class="footer-logo">
+            <img src="DR_LOtpot__1_-removebg-preview.png" alt="Doctor Lotpot Logo">
+            <h3>Doctor Lotpot</h3>
+            <p>Bringing Laughter and Joy!</p>
+        </div>
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#videos">Our Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <!-- Contact Details -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>123 Laughter Street,<br>Comedy Town,<br>Smileville, USA</p>
+            <p>+1 123-456-7890</p>
+            <p>contact@doctorlotpot.com</p>
+            <p>Available: Mon-Sat, 9:00 AM - 6:00 PM</p>
+        </div>
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Section -->
+    <div class="subscribe-section">
+        <h2>Subscribe for Updates</h2>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</footer>
+
+
+<script>
+    // Select the button and body element
+const toggleButton = document.getElementById('toggle-mode');
+const body = document.body;
+
+// Check if dark mode is already set in localStorage
+if (localStorage.getItem('mode') === 'dark') {
+    body.classList.add('dark-mode');
+}
+
+// Toggle dark mode on button click
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    // Save the mode preference in localStorage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('mode', 'dark');
+    } else {
+        localStorage.setItem('mode', 'light');
+    }
+});
+
+</script>
+<script src="logic.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
